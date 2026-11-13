@@ -1,0 +1,335 @@
+/* Configuración general con tonos rosa pastel muy suaves y claros */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #fffbfc; /* Fondo blanco con un toque imperceptible de rosa */
+  color: #5c474f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* Tipografía de títulos con Playfair Display */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Cabecera con un degradé de rosa pastel súper clarito */
+.header-principal {
+  background: linear-gradient(135deg, #ffe5ec, #ffccd5);
+  color: #6b3a44;
+  text-align: center;
+  padding: 55px 20px;
+  border-bottom: 2px solid #ffb3c1;
+}
+
+.header-principal h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitulo {
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+}
+
+/* Contenedor central */
+.contenedor-principal {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Introducción fluida y texto justificado */
+.seccion-intro {
+  margin-bottom: 40px;
+  padding: 0 10px;
+  font-size: 1.05rem;
+  color: #6b5059;
+  text-align: justify;
+}
+
+.seccion-intro p {
+  margin: 0;
+}
+
+/* Sistema de columnas fluidas */
+.contenedor-columnas {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.columna h3 {
+  color: #a8586c;
+  margin-top: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ffccd5;
+  padding-bottom: 8px;
+}
+
+/* Texto justificado para las columnas */
+.columna p {
+  font-size: 0.94rem;
+  color: #5c474f;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+.columna.acento-rosado {
+  background-color: #fff0f3;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #ffb3c1;
+}
+
+.columna.acento-crema {
+  background-color: #fff7f8;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #ffccd5;
+}
+
+/* Estilos para la imagen del podcast */
+.contenedor-imagen {
+  margin: 12px 0;
+  text-align: center;
+}
+
+.img-estilo {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(255, 179, 193, 0.25);
+  border: 1px solid #ffccd5;
+}
+
+/* Sección de datos y porcentajes */
+.seccion-datos {
+  background-color: #fff0f3;
+  padding: 35px 20px;
+  border-radius: 12px;
+  margin: 40px 0;
+  text-align: center;
+  border: 1px solid #ffccd5;
+}
+
+.seccion-datos h2 {
+  color: #a8586c;
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sub-datos {
+  font-size: 0.9rem;
+  color: #b07c87;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.contenedor-porcentajes {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-porcentaje {
+  position: relative;
+  flex: 1;
+}
+
+.btn-porcentaje {
+  width: 100%;
+  padding: 14px;
+  background-color: #ffb3c1;
+  color: #522530;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(255, 179, 193, 0.3);
+  transition: background-color 0.2s;
+}
+
+.btn-porcentaje:hover {
+  background-color: #ff8fa3;
+  color: white;
+}
+
+.dropdown-contenido {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 270px;
+  background-color: #ffffff;
+  border: 1px solid #ffccd5;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(168, 88, 108, 0.1);
+  z-index: 100;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-porcentaje:hover .dropdown-contenido {
+  display: block;
+}
+
+.dropdown-contenido p {
+  font-size: 0.86rem;
+  color: #5c474f;
+  margin: 0 0 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #fff0f3;
+  text-align: justify;
+}
+
+.dropdown-contenido p:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+/* Botones de enlaces */
+.btn-enlace {
+  display: inline-block;
+  padding: 9px 18px;
+  color: #522530;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 0.86rem;
+  margin-top: 15px;
+  transition: filter 0.2s;
+}
+
+.btn-youtube {
+  background-color: #ffb3c1;
+}
+
+.btn-pdf {
+  background-color: #ffccd5;
+}
+
+.btn-enlace:hover {
+  filter: brightness(0.92);
+}
+
+/* SECCIÓN FINAL DE CONCLUSIÓN CON FONDO DE FLORES Y CAJA BLANCA */
+.seccion-conclusion-floral {
+  background-image: url("https://previews.123rf.com/images/m_woodhouse/m_woodhouse1810/m_woodhouse181000010/109250994-floral-retro-seamless-pattern-cherry-or-sakura-flowers-background-pastel-vintage-illustration-in.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  margin-top: 50px;
+}
+
+.tarjeta-conclusion-blanca {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ffccd5;
+}
+
+.tarjeta-conclusion-blanca h2 {
+  color: #a8586c;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.tarjeta-conclusion-blanca p {
+  text-align: justify;
+  font-size: 0.96rem;
+  color: #5c474f;
+  margin-bottom: 15px;
+}
+
+.caja-preguntas {
+  background-color: #fff0f3;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25px 0;
+  border-left: 3px solid #ffb3c1;
+}
+
+.caja-preguntas h4 {
+  margin-top: 0;
+  color: #a8586c;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.caja-preguntas ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.caja-preguntas li {
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+  color: #5c474f;
+  text-align: justify;
+}
+
+.caja-preguntas li:last-child {
+  margin-bottom: 0;
+}
+
+.frase-cierre {
+  font-style: italic;
+  font-weight: 500;
+  text-align: center !important;
+  color: #6b3a44;
+  margin-top: 25px;
+  font-size: 1.02rem;
+}
+
+/* Footer */
+.footer-principal {
+  text-align: center;
+  padding: 25px;
+  background-color: #ffe5ec;
+  color: #6b3a44;
+  font-size: 0.85rem;
+  border-top: 1px solid #ffccd5;
+}
+
+/* Animación sutil */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
