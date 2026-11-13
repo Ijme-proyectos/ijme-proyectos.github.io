@@ -1,0 +1,121 @@
+h1 {
+  font-size: 350%;
+  text-decoration: underline;
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgba(241, 120, 106, 0.596);
+  text-decoration: dotted;
+}
+img {
+  text-align: center;
+  width: 70%;
+  height: 70%;
+}
+div {
+  border: 2px solid white;
+  text-align: center;
+  font-family: calibri, sans-serif;
+}
+p {
+  font-family: calibri, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: salmon;
+  text-align: center;
+  text-decoration-line: underline;
+}
+body {
+  font-family: Calibri, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Estilos del menú de navegación superior */
+.menu-seccion {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.enlaces-navegacion {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-seccion a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.menu-seccion a h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.menu-seccion a:hover h2 {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.menu-seccion p {
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Contenedor principal que pone los divs de entrevistas en paralelo */
+.container-paralelo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Estilo de cada columna de entrevista */
+.columna-entrevista {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.columna-entrevista h2 {
+  font-size: 1.1rem;
+  color: #2563eb;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+.columna-entrevista ul {
+  padding-left: 20px;
+}
+
+.columna-entrevista li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  color: #374151;
+}
+.titulo {
+  text-align: center;
+}
+
+
+
